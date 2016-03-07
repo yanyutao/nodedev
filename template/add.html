@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>添加数据</title>
+		<link rel="stylesheet" type="text/css" href="css/mkui-base.css"/>
+		<style type="text/css">
+			body{
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 640px;
+			}
+			h1{
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			button{
+				border: none;
+			}
+			ul{
+				margin-top: 10px;
+			}
+			a{
+				display: block;
+			}
+			input{
+				border: 1px solid #efefef;
+				height:40px;
+				padding: 4px 5px;
+				margin-left: 10px;
+				margin-right: 10px;
+				border-radius: 4px;
+				margin-bottom: 5px;
+				width: -webkit-calc(100% - 20px);
+			}
+			.btn-add{
+				background: #0F9AE0;
+				display: block;
+				width: -webkit-calc(100% - 20px);
+				height: 40px;
+				border-radius: 4px;
+				color: #fff;
+				font-size: 16px;
+				margin-left:10px;
+				margin-right: 10px;
+			}
+			.btn-add:hover{
+				background: #3BB4F2;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="text-c">添加数据 --闫宇韬 </h1>
+		<ul>
+			<li><input type="text" name="name" placeholder="请输入您的姓名"/></li>
+			<li><input type="text" name="age" placeholder="请输入您的年龄"/></li>
+			<li><input type="text" name="des" placeholder="请输入您的职位"/></li>
+		</ul>
+		<button class="btn-add">添加</button>
+		<script src="./js/mkui.v0.2.js"></script>
+		<script src="./js/ajax.js"></script>
+		<script>
+			m(function(){
+				m('.btn-add').click(function(){
+					//判断能否提交
+
+					//提交ajax
+
+				});
+			})
+		</script>
+	</body>
+</html>
