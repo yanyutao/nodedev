@@ -57,11 +57,22 @@
 	<body>
 		<h1 class="text-c">数据展示</h1>
 		<ul>
+			<!--<li><span>姓名：<i>闫宇韬</i></span><span>年龄：<i>26</i></span><span>职位：<i>H5前端开发</i></span></li>
 			<li><span>姓名：<i>闫宇韬</i></span><span>年龄：<i>26</i></span><span>职位：<i>H5前端开发</i></span></li>
 			<li><span>姓名：<i>闫宇韬</i></span><span>年龄：<i>26</i></span><span>职位：<i>H5前端开发</i></span></li>
 			<li><span>姓名：<i>闫宇韬</i></span><span>年龄：<i>26</i></span><span>职位：<i>H5前端开发</i></span></li>
-			<li><span>姓名：<i>闫宇韬</i></span><span>年龄：<i>26</i></span><span>职位：<i>H5前端开发</i></span></li>
-			<li><span>姓名：<i>闫宇韬</i></span><span>年龄：<i>26</i></span><span>职位：<i>H5前端开发</i></span></li>
+			<li><span>姓名：<i>闫宇韬</i></span><span>年龄：<i>26</i></span><span>职位：<i>H5前端开发</i></span></li>-->
 		</ul>
+	   <script src="js/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+	   <script type="text/javascript">
+	   	var showPage = {
+	   		data:{
+					"method":"searchperson"
+				},
+	   		ajax({url:'./show.html',this.data,success:function(data){
+						console.log(JSON.parse(data))
+				}})
+	   	}
+	   </script>
 	</body>
 </html>
