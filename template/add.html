@@ -114,7 +114,9 @@
 				sendAjax:function(){
 					var that = this;
 					ajax({url:'./add.html',data:that.data,success:function(data){
+						var msg = JSON.parse(data);
 						console.log(JSON.parse(data))
+						m.ui.alert({'msg':msg.msg});
 					}})
 				},
 				//初始化
